@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Redirecting...</title>
-    <link rel="stylesheet" href="styles.css" />
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
+    <title>Redirecting...</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Load Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
 
-    <div id="particles"></div>
+    <!-- This div will hold the particles -->
+    <div id="particles-js"></div>
 
-    <main role="main" aria-live="polite" aria-label="Redirecting">
-      <h1>
-        Redirecting to 
-        <span class="shortenedurl"></span>
-      </h1>
-      <p class="subtext">Please wait a moment…</p>
-      <div class="loader" aria-label="Loading animation">
-        <div></div><div></div><div></div>
-      </div>
+    <main role="main" aria-live="polite">
+        <div class="glass-content">
+            <h1>Redirecting to</h1>
+            <span class="shortenedurl">...</span>
+            <p class="subtext">Please wait while we prepare your destination.</p>
+            
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </main>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
