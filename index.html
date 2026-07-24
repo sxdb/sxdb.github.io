@@ -5,24 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Redirecting...</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- Load Particles.js Library -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-
-    <!-- This div will hold the particles -->
     <div id="particles-js"></div>
+    
+    <!-- Animated background gradient -->
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Floating orbs for ambient effect -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
 
     <main role="main" aria-live="polite">
         <div class="glass-content">
-            <h1>Redirecting to</h1>
-            <span class="shortenedurl">...</span>
-            <p class="subtext">Please wait while we prepare your destination.</p>
+            <!-- Animated icon -->
+            <div class="icon-wrapper">
+                <svg class="shield-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                <div class="pulse-ring"></div>
+            </div>
+
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span class="status-text">Secure Connection</span>
+            </div>
+
+            <h1>
+                <span class="title-line">Taking you to</span>
+            </h1>
             
+            <div class="url-container">
+                <span class="shortenedurl">...</span>
+                <div class="url-shimmer"></div>
+            </div>
+            
+            <p class="subtext">Please wait while we verify and prepare your destination</p>
+
+            <!-- Progress bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+                <div class="progress-glow"></div>
+            </div>
+
+            <div class="countdown-text" id="countdownDisplay">Redirecting in 3s</div>
+            
+            <!-- Modern loader -->
             <div class="loader">
                 <span></span>
                 <span></span>
                 <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Security features -->
+            <div class="security-features">
+                <div class="feature">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                    <span>SSL Encrypted</span>
+                </div>
+                <div class="feature">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                    <span>Verified Safe</span>
+                </div>
             </div>
         </div>
     </main>
